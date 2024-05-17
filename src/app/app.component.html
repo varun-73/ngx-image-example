@@ -1,0 +1,17 @@
+<div>
+    <input type="text" ngxDaterangepickerMd [(ngModel)]="selected" class="form-control"/>
+    
+</div>
+
+<div>
+    <ngx-image-gallery 
+    [images]="images" 
+    [conf]="conf"
+    (onOpen)="galleryOpened($event)"
+    (onClose)="galleryClosed()"
+    (onImageClicked)="galleryImageClicked($event)"
+    (onImageChange)="galleryImageChanged($event)"
+    (onDelete)="deleteImage($event)"
+    ></ngx-image-gallery>
+</div>
+
